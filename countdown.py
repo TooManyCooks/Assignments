@@ -2,7 +2,7 @@
 from collections import defaultdict
 maxWord = ''
 words = defaultdict(list)
-inData = 'zest'
+inData = 'AMUSINGMY'
 with open('/usr/share/dict/words') as dict_file:
     for word in dict_file:
         if(len(word)>11):
