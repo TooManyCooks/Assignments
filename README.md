@@ -39,7 +39,7 @@ data which has already been calculated, using this snippet of code.
 
 
 
-## Stick Conundrum
+## Stick Conundrum :
 Grab a stick. Break it in two. Now randomly break another piece to make three
 pieces. What is the probability you can form a triangle?
 
