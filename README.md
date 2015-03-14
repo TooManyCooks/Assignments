@@ -65,6 +65,7 @@ Demonstrated by some simple python code.
 
 ## Huffman Coding : 
 Derive the huffman codes and compression rate of a piece of text. 
+
 [Huffman Coding](http://en.wikipedia.org/wiki/Huffman_coding)
 
 - Sort data by it's frequency.
@@ -89,9 +90,13 @@ got a 1 appended to it's huffman code, and the left node got a 0 appended.
 For example, a priority queue : 
 
 Y:9, P:7, B:7, A:5, R:4, C:3, Z: 1
+
 After process
+
 Y:9, P:7, B:7, A:5, CZ:4, R:4
+
 C now has a huffman code of 0.
+
 Z now has a huffman code of 1.
 
 This process if repeated until there is only one element remaining it the queue. 
