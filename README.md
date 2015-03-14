@@ -52,5 +52,11 @@ This is determined by the triangle inequality theorem.
 
 ![Inequality Theorem](http://images.tutorvista.com/cms/images/67/triangle-inequality.png)
 
+The sum of the largest side, must not be greater, than the sum of the remaining sides. 
+
+```python
+	if(breakOne>50 or breakTwo>50 or breakThree>50): return 0
+	else: return 1
+
 
 
