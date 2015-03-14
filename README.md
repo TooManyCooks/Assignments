@@ -50,7 +50,7 @@ The answer works out at roughly 19% chance.
 
 This is determined by the triangle inequality theorem.
 
-![Inequality Theorem]()/home/documents/personal docs/triInequality.png)
+![Inequality Theorem](http://images.tutorvista.com/cms/images/67/triangle-inequality.png)
 
 
 
