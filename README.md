@@ -1,14 +1,14 @@
 # Programming Assignments
 
-.. Collatz Sequence
+1. Collatz Sequence
 
-.. Stick Conundrum
+2. Stick Conundrum
 
-.. Huffman Encoding
+3. Huffman Encoding
 
-.. Bit Shifting
+4. Bit Shifting
 
-.. Countdown Game Show
+5. Countdown Game Show
 
 
 ## Collatz Sequence : 
@@ -26,7 +26,7 @@ Find the starting number under 10 million with the longest sequence.
 The starting number with the longest sequence is : 
 8400511 with a length of 686.
 
-This assignment introduced concepts of optimisation, ie reusing 
+This assignment introduced concepts of optimisation, ie. reusing 
 data which has already been calculated, using this snippet of code. 
 
 ```java
@@ -36,3 +36,14 @@ data which has already been calculated, using this snippet of code.
 		finishedInt = i;
 	}
 ```
+
+
+
+## Stick Conundrum
+Grab a stick. Break it in two. Now randomly break another piece to make three
+pieces. What is the probability you can form a triangle?
+
+The answer works out at roughly 19% chance. 
+
+
+
