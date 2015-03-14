@@ -84,7 +84,7 @@ Demonstrated by this python code.
 ```
 
 To derive the codes, normally a traversal of the Huffman Tree is required. 
-But I computer the codes as the program generated the tree. 
+But I computed the codes as the program generated the tree. 
 I chose the two smallest frequency nodes, as they were combined, the right node
 got a 1 appended to it's huffman code, and the left node got a 0 appended. 
 For example, a priority queue : 
