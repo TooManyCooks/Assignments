@@ -23,6 +23,7 @@ Using this rule and starting with 13, we generate the following sequence:
 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
 
 The sequence contains 10 terms before it ends on a 1, which ends the sequence.
+
 Find the starting number under 10 million with the longest sequence.
 
 The starting number with the longest sequence is : 
