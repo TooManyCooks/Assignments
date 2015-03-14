@@ -63,3 +63,42 @@ Demonstrated by some simple python code.
 
 
 
+## Huffman Coding : 
+Derive the huffman codes and compression rate of a piece of text. 
+[Huffman Coding](http://en.wikipedia.org/wiki/Huffman_coding)
+
+- Sort data by it's frequency.
+- Determine the two smallest frequencies. 
+- Combine them.
+- Add the combined node back into the tree
+- Remove the two smallest. 
+- Recursively repeat. 
+
+Demonstrated by this python code.
+
+```python
+	counter[twoSmallest[1][0] + twoSmallest[0][0]] = twoSmallest[0][1] + twoSmallest[1][1]
+	del counter[twoSmallest[0][0]]
+	del counter[twoSmallest[1][0]]
+```
+
+To derive the codes, normally a traversal of the Huffman Tree is required. 
+But I computer the codes as the program generated the tree. 
+I chose the two smallest frequency nodes, as they were combined, the right node
+got a 1 appended to it's huffman code, and the left node got a 0 appended. 
+For example, a priority queue : 
+
+Y:9, P:7, B:7, A:5, R:4, C:3, Z: 1
+After process
+Y:9, P:7, B:7, A:5, CZ:4, R:4
+C now has a huffman code of 0.
+Z now has a huffman code of 1.
+
+This process if repeated until there is only one element remaining it the queue. 
+
+```python
+	for i in range(0, len(twoSmallest[0][0])):
+		codes[twoSmallest[0][0][i]] = '0'+ str(codes[twoSmallest[0][0][i]]) 
+	for j in range(0, len(twoSmallest[1][0])):
+		codes[twoSmallest[1][0][j]] = '1'+ str(codes[twoSmallest[1][0][j]]) #
+```
