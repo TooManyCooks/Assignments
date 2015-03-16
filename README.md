@@ -107,3 +107,25 @@ This process if repeated until there is only one element remaining it the queue.
 	for j in range(0, len(twoSmallest[1][0])):
 		codes[twoSmallest[1][0][j]] = '1'+ str(codes[twoSmallest[1][0][j]]) #
 ```
+
+
+
+## Bit Shifting : 
+Write a Java program that takes in an int and prints out the next power of
+
+2 (e.g. 5 → 8, 4 → 4, 17 → 32, 1 → 1, 61 → 64). Don’t use any loops.
+
+Don’t use any arithmetic. Only use bit-shifting. 
+
+```java
+
+
+### Method One : 
+Find the leading one in an an integer's binary string, right shift n times until
+
+it is the only digit remaining in the string. Now left shift n+1 times until you
+
+have a binary string of one leading one, followed by appended zeros.
+
+
+### Method Two : 
