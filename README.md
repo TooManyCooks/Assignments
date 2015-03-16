@@ -117,9 +117,6 @@ Write a Java program that takes in an int and prints out the next power of
 
 Don’t use any arithmetic. Only use bit-shifting. 
 
-```java
-
-
 ### Method One : 
 Find the leading one in an an integer's binary string, right shift n times until
 
@@ -128,4 +125,41 @@ it is the only digit remaining in the string. Now left shift n+1 times until you
 have a binary string of one leading one, followed by appended zeros.
 
 
+```java
+	if((checker > 0) && ((checker & (checker-1)) == 0)==true){
+		System.out.println("Power of two above "+checker+" is "+checker);
+	}
+
+	else if((checker > 0) && ((checker & (checker-1)) == 0)==false) {
+		String check = Long.toBinaryString(originalChecker);
+		int shift = check.length();
+		checker = checker >> shift-1;
+		checker = checker << shift;
+		System.out.println("Power of two above "+originalChecker+" is "+checker);
+	}
+```
+
+Where this is a check for powers of two.  
+``` java 
+	((checker & (checker-1)) == 0)==true)
+```
+
 ### Method Two : 
+Subtract one from the value being checked. Now use the 'or' bitwise
+
+operator on checker, or-ing it against the value of itself, right shifted
+
+one, two, four, eight and sixteen times.
+
+Updating checker each time. Now add on the one you subtracted at the start. 
+
+```java
+	checker.subtract(subtract); // Decrementing by one. 
+	checker = checker.or(checker.shiftRight(1));
+	checker = checker.or(checker.shiftRight(2));
+	checker = checker.or(checker.shiftRight(4));
+	checker = checker.or(checker.shiftRight(8));
+	checker = checker.or(checker.shiftRight(16));
+	checker.add(BigInteger.ONE); // Incrementing by one. 
+```
+
