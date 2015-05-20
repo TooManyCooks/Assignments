@@ -31,7 +31,6 @@ public class BS{
 
 		if(selector.compareTo("S")== 0 ) scrubQuestion(p1, g1, y1, c11, c21);
 		else if(selector.compareTo("B")== 0 ) bonusQuestion(p2, g2, y2, c12, c22);
-		else System.out.println("Read, you sand n**g**.");
 		
 	}
 
