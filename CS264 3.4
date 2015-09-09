@@ -1,0 +1,41 @@
+// CS264 Question 3.4
+// 9/9/2015
+// Jake McDermott
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int accountNumber, currentBalance, totalCharged, totalCredits, totalAllowance;
+    
+    while(true){
+        
+        cout << "Enter an account number : ";
+        cin >> accountNumber;
+        if(accountNumber == -1) break;
+        
+        cout << "Enter current balance : ";
+        cin >> currentBalance;
+ 
+        cout << "Enter the month's total charges : ";
+        cin >> totalCharged;
+ 
+        cout << "Enter total credits applied this month : ";
+        cin >> totalCredits;
+ 
+        cout << "Enter your credit allowance : ";
+        cin >> totalAllowance;
+        
+        int newBalance = currentBalance + totalCharged - totalCredits;
+        
+        if (newBalance > totalAllowance) {
+            cout << "Credit limit exceeded." << endl;
+        } else {
+            cout << totalAllowance - newBalance << " remaining credit." << endl;
+        }
+    }
+    
+    return 0;
+}
