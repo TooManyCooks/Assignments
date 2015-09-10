@@ -1,0 +1,34 @@
+// CS264 Lab 2 1.1
+// 10/9/2015
+// Jake McDermott
+
+#include <iostream>
+
+void swapByReference(int& x, int& y){
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+void swapByPointer(int* x, int* y){
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+using namespace std;
+
+int main()
+{
+    int x, y;
+    cout << "Enter two numbers : ";
+    cin >> x >> y;
+    
+    swapByReference(x, y);
+    cout << "Swapped by reference : " << "x = " << x << " y = " << y << endl;
+    
+    swapByPointer(&x, &y);
+    cout << "Swapped by pointer : " << "x = " << x << " y = " << y << endl;
+    
+    return 0;
+}
