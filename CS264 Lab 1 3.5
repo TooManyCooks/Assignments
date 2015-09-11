@@ -7,13 +7,12 @@
 
 using namespace std;
 
-bool isPrime(int inData)
-{
-    if(inData == 1){
+bool isPrime(int inData) {
+    if(inData == 1) {
         cout << "1 is neither a prime nor none-prime number" << endl;
         return false;
     }
-    else if (inData == 2){
+    else if (inData == 2) {
         return true;
     }
 
@@ -28,8 +27,7 @@ bool isPrime(int inData)
     return true;
 }
 
-int main()
-{
+int main() {
 
     for(int i = 1; i < 5000; i++){
         if(isPrime(i)){
