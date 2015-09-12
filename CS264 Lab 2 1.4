@@ -1,0 +1,42 @@
+// CS264 Lab 2 1.4
+// 12/9/2015
+// Jake McDermott
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+const int DESTSIZE = 27;
+
+int my_string_len(char str[]){
+    int counter = 0;
+    while (str[counter]!='\0'){
+        counter++;
+    }
+    return counter;
+}
+
+void my_string_cat(char dest[], char src[], int destsize){
+    if(my_string_len(dest) + my_string_len(src) <= destsize){
+        strcat(dest, " ");
+        strcat(dest, src);
+    }
+    else{
+        cout << "Destination does not have enough room.. ";   
+    }
+}
+
+int main()
+{
+    char myString1[DESTSIZE] = "Sack of";
+    char myString2[21] = "Baghdad was in 1258!";
+    
+    cout << "myString1 : " << myString1 << endl;
+    cout << "myString2 : " << myString2 << endl;
+    
+    my_string_cat(myString1, myString2, DESTSIZE);
+    
+    cout << "myString1 after concat : " << myString1 << endl;
+
+}
