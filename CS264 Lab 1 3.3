@@ -18,11 +18,9 @@ int main() {
         return 1;
     }
  
-    cout << x / 10000 << "   ";
-    cout << (x / 1000) % 10 << "   ";
-    cout << (x / 100) % 10 << "   ";
-    cout << (x / 10) % 10 << "   ";
-    cout << x % 10 << endl;
- 
+    for(int i = 10000; i > 0; i = i/10){
+        cout << (x / i) % 10 << "   ";
+    }
+    
     return 0;
 }
