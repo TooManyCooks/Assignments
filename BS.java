@@ -51,6 +51,7 @@ public class BS{
 		message = message.multiply(c2).mod(p);
 		System.out.println("Message = "+message);
 	}
+	
 	public static BigInteger getPrivateKey(BigInteger p, BigInteger g , BigInteger y){
 		
 		// m = Ceiling(sqrt(n))
