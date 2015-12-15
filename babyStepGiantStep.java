@@ -5,7 +5,7 @@ import java.util.Scanner;
 // Comments come directly from the algorithm
 // on http://en.wikipedia.org/wiki/Baby-step_giant-step
 
-public class BS{
+public class babyStepGiantStep{
 	
 	// Variables for Rob's method.
 	private static final BigInteger valueOfTwo = BigInteger.valueOf(2L);
